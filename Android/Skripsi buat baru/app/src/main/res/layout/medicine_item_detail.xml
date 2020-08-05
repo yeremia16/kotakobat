@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="textStart"
+    tools:context=".Activities.pasien_ObatDetailNext">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_obat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/id_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:textSize="28dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Informasi Obat"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    android:text="Nama Obat"/>
+
+                <TextView
+                    android:id="@+id/tampilNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints"/>
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    android:text="Jumlah Obat"/>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/tampilJumlah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="26dp"
+                        android:layout_weight="0.7"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        tools:ignore="MissingConstraints"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="26dp"
+                        android:layout_weight="0.3"
+                        android:textAlignment="textStart"
+                        android:text="biji"
+                        android:textColor="@color/colorPrimary"
+                        tools:ignore="MissingConstraints"/>
+                </TableRow>
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    android:text="Aturan konsumsi"/>
+
+                <TextView
+                    android:id="@+id/tampilAturanMakan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="26dp"
+                    android:textAlignment="textStart"
+                    tools:ignore="MissingConstraints"
+                    android:textColor="@color/black"/>
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    android:text="Dosis Obat"/>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:id="@+id/tampilDosis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="26dp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/black"
+                        tools:ignore="MissingConstraints"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22dp"
+                        android:layout_weight="0.4"
+                        android:textAlignment="textStart"
+                        android:text="kali sehari"
+                        android:textColor="@color/colorPrimary"
+                        tools:ignore="MissingConstraints"/>
+                </TableRow>
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    android:text="Posisi Laci"/>
+
+                <TextView
+                    android:id="@+id/txtTempatLaci"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    tools:ignore="MissingConstraints"/>
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    android:text="Warna Tempat"/>
+
+                <TextView
+                    android:id="@+id/warnaTempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/black"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints"/>
+            </TableRow>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:layout_weight="0.5"
+                    android:text="Keterangan Obat"/>
+
+                <TextView
+                    android:id="@+id/tampilKeterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:textAlignment="textStart"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints"/>
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:textSize="28dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Waktu Obat"/>
+
+        <TextView
+            android:id="@+id/errorMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:text="Belum ada waktu untuk obat berikut"/>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tr_Time1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/idWaktu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtTime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Waktu 1"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/shTime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="26sp" />
+
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/hiasan1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/theme_divider"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/tr_Time2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/idWaktu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtTime2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="26sp"
+                    android:text="Waktu 2"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:id="@+id/shTime2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="26sp"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textStart"
+                    android:layout_weight="0.5"/>
+
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/hiasan2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/theme_divider"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/tr_Time3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/idWaktu3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtTime3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="26sp"
+                    android:text="Waktu 3"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:id="@+id/shTime3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="26sp"
+                    android:layout_weight="0.5"/>
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/hiasan3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/theme_divider"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btnUbahInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubah Informasi Obat"
+                android:textSize="20dp"
+                android:theme="@style/Base.Theme.Button.Green"/>
+
+            <Button
+                android:id="@+id/btnUbahWaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubah Waktu Obat"
+                android:textSize="20dp"
+                android:theme="@style/Base.Theme.Button.Green"/>
+
+            <Button
+                android:id="@+id/btnHapus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hapus Obat"
+                android:textSize="20dp"
+                android:theme="@style/Base.Theme.Button.Red"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

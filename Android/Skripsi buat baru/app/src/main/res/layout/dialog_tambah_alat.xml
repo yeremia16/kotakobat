@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Nama Kotak Obat"/>
+
+    <EditText
+        android:id="@+id/txtNamaKotak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama Kotak obat"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Password Kotak Obat"/>
+
+    <EditText
+        android:id="@+id/txtPassKotak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Password Kotak obat"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btn_hubungkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:padding="10sp"
+        android:layout_gravity="center"
+        android:text="Hubungkan"/>
+</LinearLayout>
